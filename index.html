@@ -1,37 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Calculator</title>
+    <title>Calculator App</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="calculator-grid">
-      <div class="output">
-        <div data-prev-op class="prev-operand">123</div>
-        <div data-cur-op class="current-operand">456</div>
-      </div>
-      <button data-ac class="span-two">AC</button>
-      <button data-del>Del</button>
-      <button data-op>÷</button>
-      <button data-num>1</button>
-      <button data-num>2</button>
-      <button data-num>3</button>
-      <button data-op>x</button>
-      <button data-num>4</button>
-      <button data-num>5</button>
-      <button data-num>6</button>
-      <button data-op>+</button>
-      <button data-num>7</button>
-      <button data-num>8</button>
-      <button data-num>9</button>
-      <button data-op>-</button>
-      <button data-num>.</button>
-      <button data-num>0</button>
-      <button data-eql class="span-two">=</button>
-    </div>
+    <input type="text" id="result" disabled />
+
+    <input
+      type="button"
+      value="1"
+      data-value="1"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="2"
+      data-value="2"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="3"
+      data-value="3"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="+"
+      data-value="+"
+      onclick="addToExpression(this)"
+    />
+    <br />
+    <input
+      type="button"
+      value="4"
+      data-value="4"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="5"
+      data-value="5"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="6"
+      data-value="6"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="-"
+      data-value="-"
+      onclick="addToExpression(this)"
+    />
+    <br />
+    <input
+      type="button"
+      value="7"
+      data-value="7"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="8"
+      data-value="8"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="9"
+      data-value="9"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="*"
+      data-value="*"
+      onclick="addToExpression(this)"
+    />
+    <br />
+    <input
+      type="button"
+      value="0"
+      data-value="0"
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="."
+      data-value="."
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value="/"
+      data-value="/"
+      onclick="addToExpression(this)"
+    />
+    <input type="button" value="C" onclick="clearExpression()" />
+    <br />
+    <input type="button" value="=" onclick="calculateExpression()" />
   </body>
 </html>
