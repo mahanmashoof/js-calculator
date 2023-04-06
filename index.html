@@ -101,7 +101,20 @@
       data-value="/"
       onclick="addToExpression(this)"
     />
-    <input type="button" value="C" onclick="clearExpression()" />
+    <input
+      type="button"
+      value="("
+      data-value="("
+      onclick="addToExpression(this)"
+    />
+    <input
+      type="button"
+      value=")"
+      data-value=")"
+      onclick="addToExpression(this)"
+    />
+    <input type="button" value="AC" onclick="clearExpression()" />
+    <input type="button" value="Del" onclick="delLast()" />
     <br />
     <input type="button" value="=" onclick="calculateExpression()" />
   </body>
